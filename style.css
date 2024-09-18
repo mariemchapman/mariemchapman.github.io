@@ -81,8 +81,6 @@ ul {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: "Overlock", Arial, sans-serif;
     font-weight: light;
     color: antiquewhite;
@@ -96,16 +94,25 @@ a {
 a:hover {
     text-decoration: none;
     color:#C90A01;
+    background-color: antiquewhite;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+#banner:hover {
+    text-decoration: none;
+    background-color: #FFFFFF;
+
 }
 
 /*header styling*/
 
 #header {
+    text-align: center;
     display: flex;
-    flex: auto;
-    flex-wrap: wrap;
+    flex: 1;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: stretch;
     margin-top: 0.5em;
     /*background-color: yellow;*/
     padding: 0.5em;
@@ -117,10 +124,9 @@ a:hover {
 #title {
     display: flex;
     flex: auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     /*background-color: antiquewhite;*/
 }
 
@@ -128,7 +134,7 @@ a:hover {
     margin: 0.1em 0.5em;
     padding: 0.5em;
     /*background-color: brown;*/
-    justify-content: flex-start;
+
 }
 
 .motif img {
@@ -145,31 +151,23 @@ a:hover {
     font-family: 'Rowdies', 'Arial', sans-serif;
     border-radius: 5px;
     font-size: 14px;
-    display: flex;
-    flex-direction: auto;
-    align-items: stretch;
-    justify-content: center;
-    background-color: #4e697a;
     color: antiquewhite;
 }
 
 #nav ul {
-    margin: 0em;
+    margin: 0.5em;
     padding: 0em;
     display: flex;
-    /*background-color: black;*/
+    background-color:#4e697a;
+    border-radius: 5px;
     flex-wrap: wrap;
-    flex: auto;
-    justify-content: baseline;
-    align-items: stretch;
+    flex: 1;
 }
 
 #nav ul li {
     margin: 1em;
     padding: 0.5em 1em;
     border-radius: 5px;
-    justify-content: center;
-   
     /*background-color: yellowgreen;*/
 
 }
@@ -179,11 +177,8 @@ a:hover {
 #homebody {
     display: flex;
     flex-direction: row;
-    /*background-color: darkgoldenrod;
-    align-items: stretch;
-    height: max-content; */
     margin:1em 0em;
-    flex: 1 1 auto;
+    flex: 1;
 }
 
 #homebody .content {
@@ -192,8 +187,6 @@ a:hover {
     padding: 1em;
     margin: 0em 0.5em;
     align-items: center;
-    justify-content: space-around;
-    flex-basis: 1;
 }
 #homebody .pic {
     border-radius: 5px;
@@ -201,8 +194,6 @@ a:hover {
     padding: 1em;
     margin: 0em 0.5em;
     align-items: center;
-    justify-content: space-around;
-    flex-basis: 1;
 }
 
 .pic img {
